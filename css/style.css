@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+body{ background-color: rgb(232, 232, 232); font-family: 'IM Fell English SC', serif; overflow: hidden; }
+input:focus { outline: none; }
+.hidden{ display: none; }
+
+/* loginForm */
+.login-form, .greetings{
+    position: absolute; top: calc(50% - 20rem); left: 0;
+    width: 100%; height: 30rem; text-align: center;
+    background-image: url(../img/moon.png);
+    background-repeat: no-repeat; background-size: contain;
+    background-position: 65% center;
+}
+.login-form > input{ position: relative; top: 50%; }
+.login-form > input:first-child{ width: 200px; height: 40px; padding-left: 10px; box-sizing: border-box; text-align: center; }
+.login-form > input:last-child{ width: 60px; height: 40px; }
+.greetings > p{ font-size: 4rem; position: relative; top: 8rem; line-height: 5rem; }
+.greetings > p > span{ text-decoration: underline; font-style: italic; }
+.fadein{ animation: fadein 1.5s; }
+.fadeout{ animation: fadeout 1.5s; }
+@keyframes fadein{ 0% {opacity: 0;} 100% {opacity: 1;} }
+@-moz-keyframes fadein { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-webkit-keyframes fadein { 0% {opacity: 0;} 100% {opacity: 1;} }
+@-o-keyframes fadein { 0% {opacity: 0;} 100% {opacity: 1;} }
+@keyframes fadeout{ 0% {opacity: 1;} 100% {opacity: 0;} }
+@-moz-keyframes fadeout{ 0% {opacity: 1;} 100% {opacity: 0;} }
+@-webkit-keyframes fadeout{ 0% {opacity: 1;} 100% {opacity: 0;} }
+@-o-keyframes fadeout{ 0% {opacity: 1;} 100% {opacity: 0;} }
+
+
+/* col1: clock & location */
+.wrap{ width: 100%; height: 100vh; padding: 10rem; box-sizing: border-box; }
+.col1, .col3{ float: left; width: 25%; height: 100%; }
+.col2{ float: left; width: 50%; height: 100%; }
+.box1{ width: 100%; height: 30%; }
+#clock{ font-size: 5rem; text-align: center; line-height: 5rem; padding-top: 4.5rem; box-sizing: border-box; }
+#clock > span{ font-size: 2rem; }
+#clock .bird{ font-size: 2rem; display: inline-block; }
+#location{ text-align: center; position: relative; left: 1rem; font-size: 22px; }
+#bg01, #bg02{ width: 80%; height: 55%; background-size: contain; background-repeat: no-repeat; background-position: bottom; }
+#bg02{ background-position: top; width: 100%; height: 25%; }
+
+
+/* col2: todoList */
+#todoForm{ width: 100%; height: 100%; background-image: url(../img/todo.png); background-repeat: no-repeat; background-position: center; background-size: contain; text-align: center; }
+#todoForm > input{ 
+    display: inline-block; width: 200px; height: 30px; text-align: center; 
+    position: sticky; top: 51%; left: calc(50% - 100px);
+    border: none; border-bottom: 1px solid rgb(58, 58, 58); 
+    background-color: transparent; color: rgb(58, 58, 58); font-size: 20px;
+}
+#todoForm > input:last-child{ width: 25px; height: 25px; border: none; background-image: url(../img/pen.png); background-repeat: no-repeat; background-size: contain; -webkit-transform: rotate(100deg); cursor: pointer; }
+#todoList{ width: 100%; height: 100%; position: relative; top: -450px; left: -30px; }
+#todoList > li{ list-style: none; font-size: 20px; line-height: 48px; text-align: center; }
+
+
+/* col3: quote & music player */
+#quote{ display: table; width: 100%; height: 60%; font-size: 20px; color:rgb(147, 147, 147); }
+#quote > span{ display: table-cell; width: 100%; text-align: center; padding-top: 50px; box-sizing: border-box; font-style: italic; }
+#playbutton, #stopbutton{ position: fixed; bottom: 10%; right: 11%; cursor: pointer; color: rgb(147, 147, 147); float: left; margin-left: 5px; }
+#stopbutton{ right: 10%; }

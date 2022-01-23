@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple_icon.png">
+    <link rel="icon" href="img/android_icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>momentum</title>
+</head>
+<body>
+    <form class="login-form hidden">
+        <input type="text" required placeholder="Please write your name." width="200">
+        <input type="submit" value="Enter">
+    </form>
+    <div class="greetings hidden fadein">
+        <p></p>
+    </div>
+    <div class="wrap hidden">
+        <div class="col1">
+            <div class="box1">
+                <div id="clock"></div>
+                <div id="location"></div>
+            </div>
+            <div id="bg01"></div>
+        </div>
+        <div class="col2">
+            <form id="todoForm">
+                <input type="text" placeholder="Write to-dos.">
+                <input type="submit" value="">
+            </form>
+            <div class="box2">
+                <ul id="todoList"></ul>
+            </div>
+        </div>
+        <div class="col3">
+            <div id="bg02"></div>
+            <div id="quote">
+                <span></span>
+            </div>
+            <div id="musicPlayer">
+                <audio id="audio" src="audio/audio.mp3" type="audio/mpeg"></audio>
+                <div id="playbutton">▶︎</div>
+                <div id="stopbutton">◼︎</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+</html>
