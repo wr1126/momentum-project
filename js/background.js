@@ -9,8 +9,8 @@ function randomImg(){
     if(random01 === random02){
         randomImg();
     }else{
-        bg01.style.backgroundImage = `url(../img/${random01})`;
-        bg02.style.backgroundImage = `url(../img/${random02})`;
+        bg01.style.backgroundImage = `url(./img/${random01})`;
+        bg02.style.backgroundImage = `url(./img/${random02})`;
     }
 }
 
