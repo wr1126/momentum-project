@@ -7,7 +7,7 @@ input:focus { outline: none; }
 .login-form, .greetings{
     position: absolute; top: calc(50% - 20rem); left: 0;
     width: 100%; height: 30rem; text-align: center;
-    background-image: url(./img/moon.png);
+    background-image: url(../img/moon.png);
     background-repeat: no-repeat; background-size: contain;
     background-position: 65% center;
 }
@@ -42,14 +42,14 @@ input:focus { outline: none; }
 
 
 /* col2: todoList */
-#todoForm{ width: 100%; height: 100%; background-image: url(./img/todo.png); background-repeat: no-repeat; background-position: center; background-size: contain; text-align: center; }
+#todoForm{ width: 100%; height: 100%; background-image: url(../img/todo.png); background-repeat: no-repeat; background-position: center; background-size: contain; text-align: center; }
 #todoForm > input{ 
     display: inline-block; width: 200px; height: 30px; text-align: center; 
     position: sticky; top: 51%; left: calc(50% - 100px);
     border: none; border-bottom: 1px solid rgb(58, 58, 58); 
     background-color: transparent; color: rgb(58, 58, 58); font-size: 20px;
 }
-#todoForm > input:last-child{ width: 25px; height: 25px; border: none; background-image: url(./img/pen.png); background-repeat: no-repeat; background-size: contain; -webkit-transform: rotate(100deg); cursor: pointer; }
+#todoForm > input:last-child{ width: 25px; height: 25px; border: none; background-image: url(../img/pen.png); background-repeat: no-repeat; background-size: contain; -webkit-transform: rotate(100deg); cursor: pointer; }
 #todoList{ width: 100%; height: 100%; position: relative; top: -450px; left: -30px; }
 #todoList > li{ list-style: none; font-size: 20px; line-height: 48px; text-align: center; }
 
